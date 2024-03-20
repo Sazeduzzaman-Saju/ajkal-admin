@@ -43,12 +43,6 @@
       type="text/css"
     />
     <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-    <!-- For Date Range  -->
-    <link
-      href="assets/plugins/global/plugins.bundle.css"
-      rel="stylesheet"
-      type="text/css"
-    />
   </head>
   <body
     id="kt_body"
@@ -363,7 +357,7 @@
                       </a>
                     </div>
                     <div class="menu-item">
-                      <a class="menu-link" href="create-advertisement.html">
+                      <a class="menu-link" href="ads-payments.html">
                         <span class="menu-bullet">
                           <span class="bullet bullet-dot"></span>
                         </span>
@@ -608,9 +602,6 @@
                   <ol class="breadcrumb text-muted fs-6 fw-bold">
                     <li class="breadcrumb-item pe-3">
                       <a href="dashboard.html" class="pe-3">Dashboard</a>
-                    </li>
-                    <li class="breadcrumb-item pe-3">
-                      <a href="ad" class="pe-3">All Advertisement Category</a>
                     </li>
                   </ol>
                 </div>
@@ -876,204 +867,189 @@
             id="kt_content"
           >
             <div class="post d-flex flex-column-fluid" id="kt_post">
-              <div id="kt_content_container" class="container-xxl">
-                <h1 class="text-center pb-3 fs-1">Create Advertisement</h1>
+              <div id="kt_content_container" class="container-fluid">
+                <h1 class="text-center pb-3 fs-1">All Email</h1>
                 <div class="row">
-                  <div class="col-lg-10 offset-1">
+                  <div class="col-lg-12">
                     <div class="card card-flush">
-                      <div class="card-body">
-                        <!--begin::Form-->
-                        <form
-                          id="kt_docs_formvalidation_text1"
-                          class="form"
-                          action="#"
-                          autocomplete="off"
-                        >
-                          <div class="row">
-                            <div class="col-lg-6">
-                              <div class="fv-row mb-5">
-                                <label class="required fw-bold fs-6 mb-2"
-                                  >Select User
-                                </label>
-
-                                <select
-                                  name="text_input"
-                                  class="form-select form-select-solid"
-                                  data-control="select2"
-                                  data-placeholder="Select an option"
-                                >
-                                  <option></option>
-                                  <option disabled selected>Select User</option>
-                                  <option value="1">Saju</option>
-                                  <option value="2">Perfect</option>
-                                  <option value="3">Wiliam</option>
-                                  <option value="4">David</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-lg-6">
-                              <div class="fv-row mb-5">
-                                <label class="required fw-bold fs-6 mb-2"
-                                  >Select Advertisement Location
-                                </label>
-
-                                <select
-                                  name="text_input"
-                                  class="form-select form-select-solid"
-                                  data-control="select2"
-                                  data-placeholder="Select an option"
-                                >
-                                  <option></option>
-                                  <option disabled selected>
-                                    Select Location
-                                  </option>
-                                  <option value="1">Home Page Top</option>
-                                  <option value="2">Home Page</option>
-                                  <option value="3">Category Page</option>
-                                  <option value="4">News Details Page</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-lg-6">
-                              <div class="fv-row mb-5">
-                                <label class="required fw-bold fs-6 mb-2"
-                                  >Duration</label
-                                >
-
-                                <select
-                                  name="text_input"
-                                  class="form-select form-select-solid"
-                                  data-control="select2"
-                                  data-placeholder="Select an option"
-                                >
-                                  <option></option>
-                                  <option disabled selected>
-                                    Select Duration
-                                  </option>
-                                  <option value="1">7 Day</option>
-                                  <option value="2">15 Day</option>
-                                  <option value="2">30 Day</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-lg-6">
-                              <div class="fv-row mb-5">
-                                <label class="required fw-bold fs-6 mb-2"
-                                  >Total Payment</label
-                                >
-                                <input
-                                  type="number"
-                                  class="form-control form-control-solid"
-                                  name="total_payment"
-                                  placeholder="$100"
-                                  required
-                                  readonly
-                                />
-                              </div>
-                            </div>
-                            <div class="col-lg-6">
-                              <div class="fv-row mb-5">
-                                <label class="required fw-bold fs-6 mb-2"
-                                  >Pay Amount</label
-                                >
-                                <input
-                                  type="number"
-                                  class="form-control form-control-solid"
-                                  name="total_payment"
-                                  placeholder="$100"
-                                  required
-                                />
-                              </div>
-                            </div>
-                            <div class="col-lg-6">
-                              <div class="fv-row mb-5">
-                                <label class="required fw-bold fs-6 mb-2"
-                                  >Status</label
-                                >
-                                <select
-                                  name="text_input"
-                                  class="form-select form-select-solid"
-                                  data-control="select2"
-                                  data-placeholder="Select an option"
-                                >
-                                  <option></option>
-                                  <option disabled selected>
-                                    Select Status
-                                  </option>
-                                  <option value="1">Active</option>
-                                  <option value="2">Pending</option>
-                                  <option value="2">Reject</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-lg-6">
-                              <div class="fv-row mb-5">
-                                <label class="required fw-bold fs-6 mb-2"
-                                  >Upload File</label
-                                >
-                                <input
-                                  type="file"
-                                  class="form-control form-control-solid"
-                                  name="total_payment"
-                                  placeholder="$100"
-                                  required
-                                />
-                              </div>
-                            </div>
-                            <div class="col-lg-6">
-                              <div class="fv-row mb-5">
-                                <label class="required fw-bold fs-6 mb-2"
-                                  >Link</label
-                                >
-                                <input
-                                  type="url"
-                                  class="form-control form-control-solid"
-                                  name="adsurl"
-                                  placeholder="https://galaxymediaus.com"
-                                  required
-                                />
-                              </div>
-                            </div>
-                            <div class="col-lg-12">
-                              <div class="fv-row mb-5">
-                                <label class="required fw-bold fs-6 mb-2"
-                                  >Start Date</label
-                                >
-                                <input
-                                  class="form-control form-control-solid kt_daterangepicker_1"
-                                  placeholder="Pick date rage"
-                                />
-                              </div>
-                            </div>
-                          </div>
-
-                          <!--begin::Actions-->
-                          <div class="mt-4 text-end">
-                            <button
-                              id="kt_docs_formvalidation_text_submit"
-                              type="submit"
-                              class="btn btn-primary"
+                      <div
+                        class="card-header align-items-center py-5 gap-2 gap-md-5"
+                      >
+                        <div class="card-title">
+                          <div
+                            class="d-flex align-items-center position-relative my-1"
+                          >
+                            <span
+                              class="svg-icon svg-icon-2 svg-icon-gray-700 position-absolute top-50 translate-middle-y ms-4"
                             >
-                              <span class="indicator-label">
-                                Publish Advertisement</span
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
                               >
-                              <span class="indicator-progress">
-                                Please wait...
-                                <span
-                                  class="spinner-border spinner-border-sm align-middle ms-2"
-                                ></span>
-                              </span>
-                            </button>
+                                <rect
+                                  opacity="0.5"
+                                  x="17.0365"
+                                  y="15.1223"
+                                  width="8.15546"
+                                  height="2"
+                                  rx="1"
+                                  transform="rotate(45 17.0365 15.1223)"
+                                  fill="currentColor"
+                                ></rect>
+                                <path
+                                  d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                                  fill="currentColor"
+                                ></path>
+                              </svg>
+                            </span>
+                            <input
+                              type="text"
+                              data-kt-filter="search"
+                              class="form-control form-control-solid w-250px ps-14"
+                              placeholder="Search Report"
+                            />
                           </div>
-                          <!--end::Actions-->
-                        </form>
-                        <!--end::Form-->
+                          <div
+                            class="d-none kt_datatable_example_1_export"
+                          ></div>
+                        </div>
+                        <div
+                          class="card-toolbar flex-row-fluid justify-content-end gap-5"
+                        >
+                          <a
+                            type="button"
+                            class="btn btn-light-primary"
+                            href="email-create.html"
+                          >
+                            <span class="svg-icon svg-icon-3">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                              >
+                                <rect
+                                  opacity="0.5"
+                                  x="11.364"
+                                  y="20.364"
+                                  width="16"
+                                  height="2"
+                                  rx="1"
+                                  transform="rotate(-90 11.364 20.364)"
+                                  fill="currentColor"
+                                ></rect>
+                                <rect
+                                  x="4.36396"
+                                  y="11.364"
+                                  width="16"
+                                  height="2"
+                                  rx="1"
+                                  fill="currentColor"
+                                ></rect>
+                              </svg>
+                            </span>
+                            Sent Email
+                          </a>
+                        </div>
+                      </div>
+
+                      <div class="card-body pt-0">
+                        <table
+                          class="table align-middle border rounded table-striped fs-6 g-5 kt_datatable_example_1"
+                        >
+                          <thead>
+                            <tr
+                              class="text-left text-gray-400 bg-light-dark fw-bolder fs-7 text-uppercase"
+                            >
+                              <th class="">Sl</th>
+                              <th class="">Client</th>
+                              <th class="">Sent Date</th>
+                              <th class="">Status</th>
+                              <th class="" width="10%">Action</th>
+                            </tr>
+                          </thead>
+                          <tbody
+                            class="fw-bold text-gray-600 text-left"
+                          >
+                            <tr class="odd">
+                              <td>1</td>
+                              <td>Galaxy Media</td>
+                              <td>20 March 2024</td>
+                              <td>Delivered</td>
+                              <td class="text-center">
+                                <div
+                                  class="d-flex justify-content-center flex-shrink-0"
+                                >
+                                  <a
+                                    href="#"
+                                    class="btn btn-icon btn-warning me-2 mb-2"
+                                  >
+                                    <span class="svg-icon svg-icon-3">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                      >
+                                        <path
+                                          d="M17.5 11H6.5C4 11 2 9 2 6.5C2 4 4 2 6.5 2H17.5C20 2 22 4 22 6.5C22 9 20 11 17.5 11ZM15 6.5C15 7.9 16.1 9 17.5 9C18.9 9 20 7.9 20 6.5C20 5.1 18.9 4 17.5 4C16.1 4 15 5.1 15 6.5Z"
+                                          fill="currentColor"
+                                        ></path>
+                                        <path
+                                          opacity="0.3"
+                                          d="M17.5 22H6.5C4 22 2 20 2 17.5C2 15 4 13 6.5 13H17.5C20 13 22 15 22 17.5C22 20 20 22 17.5 22ZM4 17.5C4 18.9 5.1 20 6.5 20C7.9 20 9 18.9 9 17.5C9 16.1 7.9 15 6.5 15C5.1 15 4 16.1 4 17.5Z"
+                                          fill="currentColor"
+                                        ></path>
+                                      </svg>
+                                    </span>
+                                  </a>
+                                  <a
+                                    href="#"
+                                    class="btn btn-icon btn-danger me-2 mb-2"
+                                  >
+                                    <span class="svg-icon svg-icon-3">
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                      >
+                                        <path
+                                          d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z"
+                                          fill="currentColor"
+                                        ></path>
+                                        <path
+                                          opacity="0.5"
+                                          d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z"
+                                          fill="currentColor"
+                                        ></path>
+                                        <path
+                                          opacity="0.5"
+                                          d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z"
+                                          fill="currentColor"
+                                        ></path>
+                                      </svg>
+                                    </span>
+                                  </a>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <!--end::Container-->
             </div>
+            <!--end::Post-->
           </div>
           <!-- Main COntent End -->
 
@@ -1248,82 +1224,7 @@
     <script src="assets/js/custom/utilities/modals/upgrade-plan.js"></script>
     <script src="assets/js/custom/utilities/modals/create-app.js"></script>
     <script src="assets/js/custom/utilities/modals/users-search.js"></script>
-    <script src="assets/plugins/custom/tinymce/tinymce.bundle.js"></script>
-    <script src="assets/plugins/global/plugins.bundle.js"></script>
-    <script src="assets/plugins/global/plugins.bundle.js"></script>
-    <!-- Form Validation -->
-    <script>
-      // Define form element
-      const form = document.getElementById("kt_docs_formvalidation_text1");
-
-      // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
-      var validator = FormValidation.formValidation(form, {
-        fields: {
-          text_input: {
-            validators: {
-              notEmpty: {
-                message: "Text input is required",
-              },
-            },
-          },
-        },
-
-        plugins: {
-          trigger: new FormValidation.plugins.Trigger(),
-          bootstrap: new FormValidation.plugins.Bootstrap5({
-            rowSelector: ".fv-row",
-            eleInvalidClass: "",
-            eleValidClass: "",
-          }),
-        },
-      });
-
-      // Submit button handler
-      const submitButton = document.getElementById(
-        "kt_docs_formvalidation_text_submit"
-      );
-      submitButton.addEventListener("click", function (e) {
-        // Prevent default button action
-        e.preventDefault();
-
-        // Validate form before submit
-        if (validator) {
-          validator.validate().then(function (status) {
-            console.log("validated!");
-
-            if (status == "Valid") {
-              // Show loading indication
-              submitButton.setAttribute("data-kt-indicator", "on");
-
-              // Disable button to avoid multiple click
-              submitButton.disabled = true;
-
-              // Simulate form submission. For more info check the plugin's official documentation: https://sweetalert2.github.io/
-              setTimeout(function () {
-                // Remove loading indication
-                submitButton.removeAttribute("data-kt-indicator");
-
-                // Enable button
-                submitButton.disabled = false;
-
-                // Show popup confirmation
-                Swal.fire({
-                  text: "Form has been successfully submitted!",
-                  icon: "success",
-                  buttonsStyling: false,
-                  confirmButtonText: "Ok, got it!",
-                  customClass: {
-                    confirmButton: "btn btn-primary",
-                  },
-                });
-
-                //form.submit(); // Submit form
-              }, 2000);
-            }
-          });
-        }
-      });
-    </script>
+    <script src="assets/js/custom/authentication/sign-in/general.js"></script>
     <script>
       "use strict";
 
@@ -1379,11 +1280,11 @@
             ],
           })
             .container()
-            .appendTo($("#kt_datatable_example_1_export"));
+            .appendTo($(".kt_datatable_example_1_export"));
 
           // Hook dropdown menu click event to datatable export buttons
           const exportButtons = document.querySelectorAll(
-            "#kt_datatable_example_1_export_menu [data-kt-export]"
+            ".kt_datatable_example_1_export_menu [data-kt-export]"
           );
           exportButtons.forEach((exportButton) => {
             exportButton.addEventListener("click", (e) => {
@@ -1414,7 +1315,7 @@
         // Public methods
         return {
           init: function () {
-            table = document.querySelector("#kt_datatable_example_1");
+            table = document.querySelector(".kt_datatable_example_1");
 
             if (!table) {
               return;
@@ -1431,11 +1332,6 @@
       KTUtil.onDOMContentLoaded(function () {
         KTDatatablesButtons.init();
       });
-      tinymce.init({
-        selector: ".kt_docs_tinymce_plugins",
-      });
-      $(".kt_daterangepicker_1").daterangepicker();
     </script>
   </body>
-  <!--end::Body-->
 </html>
